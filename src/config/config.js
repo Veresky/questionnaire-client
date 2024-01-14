@@ -33,7 +33,7 @@ const config = {
   prod: {
     baseURL: {
       // 接口
-      main: "https://questionnaire-service-8423a5c6bce1.herokuapp.com/service/",
+      main: "https://questionnaire-service-8423a5c6bce1.herokuapp.com/demo/api/questionnaire/",
       // 链接
       portalURL: "123",
     },
