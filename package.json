@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "serve -s dist",
     "dev": "npm run serve:local",
     "serve:local": "vue-cli-service serve --mode local",
     "serve:sit": "vue-cli-service serve --mode sit",
