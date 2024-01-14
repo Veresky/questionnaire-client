@@ -61,12 +61,13 @@ const request = function (
 
   // 接口 baseURL 处理 S --
   // 接口不支持跨域，需要代理，本地在 vue.config.js 的 devServer 模块中配置，线上环境一般在 nginx 中配置
-  // if (type === "main") {
-  //   config.baseURL = "/demo/api/questionnaire";
-  // }
+  if (type === "main") {
+    //config.baseURL = "/demo/api/questionnaire";
+    config.baseURL = globalConfig.baseURL[type];
+  }
 
   // 接口支持跨域
-  config.baseURL = globalConfig.baseURL[type];
+  //config.baseURL = globalConfig.baseURL[type];
   // 接口 baseURL 处理 E --
 
   // mock
