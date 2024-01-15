@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory  } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import routes from "./routes";
 
 const router = createRouter({
-  history: createWebHistory('/demo/api/questionnaire/'),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 

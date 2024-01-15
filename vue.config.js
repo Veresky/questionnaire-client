@@ -4,7 +4,7 @@ const mock = require("./mock");
 const globalConfig = require("./src/config/config");
 
 module.exports = defineConfig({
-  publicPath: "/demo/api/questionnaire/",
+  publicPath: "",
   lintOnSave: false,
   css: {
     loaderOptions: {
